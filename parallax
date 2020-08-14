@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/parallax.min.js"></script>
+
+    <style>
+        .parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+    </style>
+    <script>
+        $(function(){
+            $('.parallax-window').parallax({
+                imageSrc: '../images/스프링.jpg',
+			naturalWidth: '50%' 
+        });
+        });
+    </script>
+</head>
+<body>
+    <div class="parallax-window" data-parallax="scroll" 
+    data-image-src="../images/스프링.jpg">
+</div>
+<p style="white-space: pre-wrap;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Veritatis nihil ex quibusdam atque amet porro nisi laudantium 
+    quam assumenda soluta sapiente tempore culpa iure ipsa nulla sit, eos ullam quod.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+     Rerum nesciunt saepe, eos maxime libero odio magni recusandae ab,
+      repellat rem minus soluta consequuntur suscipit adipisci ipsam sed obcaecati molestiae? Ad.
+
+</p>
+<div class="parallax-window" data-parallax="scroll" 
+    data-image-src="../images/MYSQL.jpg">
+</body>
+</html>
