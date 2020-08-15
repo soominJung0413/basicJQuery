@@ -1,0 +1,46 @@
+<!DOCTYPE :html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <head>
+  <meta charset='UTF-8'>
+  <title></title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- 기본적으로, 부트스트랩은 플러그인방식으로 모달을 제공함. 
+    핵심적인 키워드는 data-toggle data-target 이며, 클릭스 모달이 띄워질 태그에 
+  data-toggle="modal" data-target="#타겟아이디" 를 붙여 연동시킴-->
+  <button class="btn btn-toggle" data-toggle="modal" data-target="#myModal">
+    Show / Hide<button>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"></div>
+          <div class="modal-body">
+            Hello! Webisfree.com
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* 모달 상태를 제어하는 방법은 제이쿼리의 .modal() 메서드로 제어하게 된다.*/
+      $('#myModal').modal("toggle");
+      // 반대로 모달상태를 전환함
+
+      $('#myModal').modal("hide");
+      // 모달창 열기
+
+      $('#myModal').modal("show");
+      // 모달창 닫음
+    </script>
+
+  </body>
+</html>
