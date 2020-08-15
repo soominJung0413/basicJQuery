@@ -1,3 +1,15 @@
+$('#slider-div').slick("unslick"); << slick 를 지워주지 않으면 에러가 발생하므로 지워주고 시작해야함.
+$('#slider-div').slick('slickAdd',"<div>새로운 아이템</div>"); << slick 에 동적으로 새로운 아이템을 추가.
+
+$('#slider-div').slick('slickRemove',0);	//특정 인덱스 번호에 있는 slider 삭제
+$('#slider-div').slick('slickRemove',false);	//false이면 맨 마지막 슬라이더 삭제
+$('#slider-div').slick('slickRemove',true);	// true이면 맨 앞 슬라이더 삭제
+
+$('#slider-div').slick('slickCurrentSlide');   // 가장 첫번째에 있는 슬라이드는 0번이다.  << 현재보여지는 슬라이더 확인
+
+$('#slider-div').slick('slickPause');    // 정지
+$('#slider-div').slick('slickPlay');    // 시작    << 슬아리더 자동 넘기기
+
 <!DOCTYPE :html>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
