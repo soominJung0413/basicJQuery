@@ -1,0 +1,10 @@
+<img src="./chaeng-static.gif" alt="" data-animated="./chaeng-animated.gif" data-static="./chaeng-static.gif" class="hov-anim">
+<!-- data-animated 속성에는 움직일 파일을 , data-static 속성에는 멈춰있을 시 지정할 이미지를 지정한다. -->
+
+
+$(".hov-anim").mouseover(function() {
+  $(this).attr("src", $(this).data("animated"))
+}),
+$(".hov-anim").mouseout(function() {
+  $(this).attr("src", $(this).data("static"))
+});
